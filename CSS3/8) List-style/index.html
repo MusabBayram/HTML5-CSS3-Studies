@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .list1{
+            list-style-type: none;
+        }
+        .list1 li::before{
+            content: '';
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            background-size: 30px;
+            background-image: url("1.jpg");
+        }
+        .list2{
+            list-style-type: square;
+        }
+        .list3{
+            list-style-type: lower-alpha;
+        }
+        .list4{
+            list-style-type: circle inside url("1.jpg");
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="list1">
+        <li> Eleman 1</li>
+        <li> Eleman 2</li>
+        <li> Eleman 3</li>
+    </ul>
+
+    <ul class="list2">
+        <li> Eleman 1</li>
+        <li> Eleman 2</li>
+        <li> Eleman 3</li>
+    </ul>
+
+    <ul class="list3">
+        <li> Eleman 1</li>
+        <li> Eleman 2</li>
+        <li> Eleman 3</li>
+    </ul>
+
+    <ul class="list4">
+        <li> Eleman 1</li>
+        <li> Eleman 2</li>
+        <li> Eleman 3</li>
+    </ul>
+</body>
+</html>

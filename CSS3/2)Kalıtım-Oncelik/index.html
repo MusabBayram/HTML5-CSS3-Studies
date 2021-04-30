@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #kalanlar ~ div{
+            color: darkblue;/*+ da sonrakı ılkını degıstırıyor*/
+        }
+        .takimlar1{
+            color: red;
+            background-color: salmon;
+        }
+        .takimlar1 h2{
+            color: green;
+        }
+        .takimlar1 p em{
+            color: white;
+            background-color: black;
+        }
+        div>h2{
+            color: chocolate !important/*burda
+            important önemli diyerek baskın oluyor*/;
+        }
+    </style>
+</head>
+<body>
+    <div class="takimlar1">
+        <h2>Takımlar</h2>
+        <p><em>Avrupa</em> Galatasaray</p>
+    </div>
+
+    <p id="kalanlar">bu satırdan sonraki divlere uygulanacak </p>
+    <div>
+        <h2>Takımlar</h2>
+        <p>Galatasaray</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            background: red;
+            width: 100%;
+            height: 500px;
+        }
+
+        .purple {
+            width: 100%;
+            height: 50px;
+            background: black;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            height: 50px;
+            background: chartreuse;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 20px;
+            width: 50%;
+            height: 25px;
+            background: blue;
+        }
+
+        /*-------------- absolute-----------------
+        relatıve gibi ancak bır ust perentına gore 
+        sekıllenıyor ve akıştan cıkıyor*/
+        .relative {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="purple fixed">Sabitlenen div</div>
+    <div class="sticky">ekrandan cıkınca beraberinde gelen div</div>
+    <div class="red">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="red">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="purple relative" style="top: -95px; left:50px;">
+    </div>
+    
+</body>
+
+</html>
